@@ -39,7 +39,7 @@ def load_user(user_id):
 
 
 # app.config['SQLALCHEMY_DATABASE_URL']='mysql://username:password@localhost/databas_table_name'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/hms'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:1234@localhost:3306/hms'
 db=SQLAlchemy(app)
 
 
@@ -308,4 +308,3 @@ def search():
 
 
 app.run(debug=True)    
-
